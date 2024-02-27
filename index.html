@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Diff</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="zero">
+        <input id="client-id" type="text" placeholder="Client ID">
+        <input id="client-secret" type="text" placeholder="Client Secret">
+        <input id="submit" value="Start" type="button">
+    </div>
+    <div id="tables" class="row" aria-disabled="true">
+        <div class="column" id="one">
+            <input id="playlist-one" type="text" placeholder="Playlist ID" disabled>
+            <input id="submit-one" type="button" value="Load" disabled>
+            <table id="first-playlist">
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </table>
+        </div>
+        <div class="column" id="two">
+            <input id="playlist-two" type="text" placeholder="Playlist ID" disabled>
+            <input id="submit-two" type="button" value="Load" disabled>
+            <table id="second-playlist">
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
