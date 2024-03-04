@@ -40,6 +40,6 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-span#zero-error {
+span.error {
   color: orangered;
 }

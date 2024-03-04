@@ -8,14 +8,15 @@
 <body>
     <div id="zero">
         <input id="client-id" type="text" placeholder="Client ID">
-        <input id="client-secret" type="text" placeholder="Client Secret">
+        <input id="client-secret" type="password" placeholder="Client Secret">
         <input id="submit" value="Start" type="button">
-        <span id="zero-error"></span>
+        <span id="zero-error" class="error"></span>
     </div>
     <div id="tables" class="row" aria-disabled="true">
         <div class="column" id="one">
-            <input id="playlist-one" type="text" placeholder="Playlist ID" disabled>
-            <input id="submit-one" type="button" value="Load" disabled>
+            <input id="playlist-one" type="text" placeholder="Playlist ID">
+            <input id="submit-one" type="button" value="Load">
+            <span id="one-error" class="error"></span>
             <table id="first-playlist">
                 <tr>
                     <th>#</th>
@@ -25,8 +26,9 @@
             </table>
         </div>
         <div class="column" id="two">
-            <input id="playlist-two" type="text" placeholder="Playlist ID" disabled>
-            <input id="submit-two" type="button" value="Load" disabled>
+            <input id="playlist-two" type="text" placeholder="Playlist ID">
+            <input id="submit-two" type="button" value="Load">
+            <span id="two-error" class="error"></span>
             <table id="second-playlist">
                 <tr>
                     <th>#</th>
