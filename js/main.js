@@ -12,8 +12,8 @@ window.onload = async () => {
     const tablesElement = document.querySelector('div#tables');
 
     const zeroErrorElement = document.querySelector('span#zero-error');
-    const oneErrorElement = document.querySelector('span#one-error');
-    const twoErrorElement = document.querySelector('span#two-error');
+    // const oneErrorElement = document.querySelector('span#one-error');
+    // const twoErrorElement = document.querySelector('span#two-error');
 
     playlistOneElement.disabled = true;
     submitOneElement.disabled = true;
@@ -25,7 +25,7 @@ window.onload = async () => {
     let accessToken = ""; // Initializing variables used in refreshToken
     let tokenType = "";
 
-    let playlistStatus = 0b00; // Bitwise Status of Playlists; 0 [0b00]: none ready; 1 [0b01]: right ready; 2 [0b10]: left: ready; 3 [0b11]: both ready;
+    // let playlistStatus = 0b00; // Bitwise Status of Playlists; 0 [0b00]: none ready; 1 [0b01]: right ready; 2 [0b10]: left: ready; 3 [0b11]: both ready;
 
 
     const startToken = async () => {
@@ -193,7 +193,7 @@ window.onload = async () => {
                         artists: [],
                     };
 
-                track.artists.forEach((val, ind) => {
+                track.artists.forEach((val) => {
                     tempItem.artists.push({
                         id: val.id,
                         name: val.name,
@@ -203,7 +203,7 @@ window.onload = async () => {
                     })
                 });
 
-                album.artists.forEach((val, ind) => {
+                album.artists.forEach((val) => {
                     tempItem.album.artists.push({
                         id: val.id,
                         name: val.name,
